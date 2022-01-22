@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <title>Javascript Refresher</title>
+    <body>
+        <h1>Javascript Refresher</h1>
+
+        <p>Hello World!</p>
+
+        <span id="output"></span>
+
+
+        <script type="text/javascript">
+
+            //implementing share and rest (...) into javascript
+            const filter_data = (...args) => {
+                return args.filter(el => el >= 10);
+            }
+            console.log(filter_data(28, 16, 5, 10, 20));
+
+            //destructuring
+            const array_values = [1, 2, 3];
+            let [num1, num2, num3] = array_values;
+            console.log(num1, num2); // array
+
+            const objective = {
+                'name' : 'NVEGS',
+                 'age' : 26
+                };
+
+            let {name} = objective;
+            console.log(name); //object
+
+
+            //array methods
+            const list = [2, 4, 5];
+            const doubleNumArray = list.map((num) => {
+                return num * 2;
+            });
+            console.log(doubleNumArray);
+
+            //array method example 2
+            const listItem = list.map((item) => { return item; });
+            console.log(listItem);
+
+            //Ternary operator
+            const a = 10; const b = 20; 
+            a == b ? console.log('it worked out') : console.log('terrible')
+
+        </script>
+
+
+    </body>
+</html>
